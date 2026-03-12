@@ -31,5 +31,6 @@ app.listen(port,()=>{
 })
 
 app.get("/",(req,res)=>{
-    res.send("Hello Everybody");
+    res.sendFile(path.join(__dirname, 'public', 'home.html'));
+    
 })
